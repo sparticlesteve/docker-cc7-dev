@@ -8,6 +8,9 @@ imageName=sfarrell/cc7-dev
 # Tag to create
 tagName=gcc49
 
+# Pull the latest base image
+sudo docker pull sfarrell/cc7-basic:latest
+
 # Build and tag "latest"
 echo "Building $imageName..."
 sudo docker build -t $imageName .
